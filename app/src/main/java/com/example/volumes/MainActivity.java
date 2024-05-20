@@ -13,8 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button piramideButton;
     private Button cilindroButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
+        piramideButton = findViewById(R.id.piramideButton);
+        piramideButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), AreaPiramide.class);
 
         cilindroButton = findViewById(R.id.cilindroButton);
         cilindroButton.setOnClickListener(new View.OnClickListener() {
