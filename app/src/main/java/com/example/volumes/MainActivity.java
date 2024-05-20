@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Button button;
 
+    Button piramideButton;
+    private Button cilindroButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,5 +39,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        cilindroButton = findViewById(R.id.cilindroButton);
+        cilindroButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CilindroActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        piramideButton = findViewById(R.id.piramideButton);
+        piramideButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), AreaPiramide.class);
+                startActivity(intent);
+
+            }
+        });
     }
 }

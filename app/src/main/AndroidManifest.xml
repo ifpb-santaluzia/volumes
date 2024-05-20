@@ -16,6 +16,12 @@
             android:name=".EsferaActivity"
             android:exported="false" />
         <activity
+            android:name=".AreaPiramide"
+            android:exported="false" />
+        <activity
+            android:name=".CilindroActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
