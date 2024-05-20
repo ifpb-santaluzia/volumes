@@ -45,9 +45,7 @@ public class EsferaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    //Tenta converter a entrada recebida
-                    Double.parseDouble(raioEditText.getText().toString());
-
+                    //Tenta converter a entrada recebida 
                     String raioString = raioEditText.getText().toString();
                     double raio = Double.valueOf(raioString);
 
