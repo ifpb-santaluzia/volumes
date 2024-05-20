@@ -12,7 +12,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
     Button piramideButton;
+    private Button cilindroButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +26,18 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+
         piramideButton = findViewById(R.id.piramideButton);
         piramideButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), AreaPiramide.class);
+
+        cilindroButton = findViewById(R.id.cilindroButton);
+        cilindroButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CilindroActivity.class);
                 startActivity(intent);
             }
         });
